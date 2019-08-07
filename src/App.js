@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import './App.css';
 
 
+
 const apiKey = '6cf3264b6c874b5c817bfea041b719a1';
  class App extends Component {
 
@@ -21,7 +22,7 @@ const apiKey = '6cf3264b6c874b5c817bfea041b719a1';
       <div className="App">
         <Header getWeather={this.getWeather} />
         <Body />
-        <Footer className="footer"/>
+        <Footer/>
       </div>
     )
   }
