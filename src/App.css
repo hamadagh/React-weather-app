@@ -12,6 +12,16 @@ html, body {
     background-position: center;
     background-size: cover;
 }
+
+/* header */
+
+.cityName h1 {
+color: rgba(255, 255, 255, 0.80);
+font-weight: bold;
+}
+
+/* header */
+
 /* form */
 .form {
     margin-top: 49vh;
@@ -19,14 +29,14 @@ html, body {
 }
 .form input {
     width: 24vw;
-    background-color: rgba(255, 255, 255, 0.40);
+    background-color: rgba(255, 255, 255, 0.20);
     border: white 1px solid;
     border-radius: 60px;
     color: white;
 }
 .form button {
     border-color: white;
-    color: black;
+    color: rgba(0, 0, 0, 0.60);
     font-weight: 600;
 }
 

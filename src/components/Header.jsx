@@ -5,7 +5,7 @@ export class Header extends Component {
         return (
             <div className="header container-fluid">
                 <div className="cityName">
-                    <h1 className="text-center">Madrid</h1>
+                    <h1 className="text-center pt-4">Madrid</h1>
                 </div>
                 
             </div>
