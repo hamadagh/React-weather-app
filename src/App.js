@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header.jsx';
-import Body from './components/Body.jsx';
+import Form from './components/Form';
 import Footer from './components/Footer.jsx';
 import './App.css';
 
@@ -26,7 +26,7 @@ const apiKey = '6cf3264b6c874b5c817bfea041b719a1';
     return (
       <div className="App">
         <Header getWeather={this.getWeather} />
-        <Body />
+        <Form />
         <Footer/>
       </div>
     )
