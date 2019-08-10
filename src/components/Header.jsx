@@ -7,7 +7,6 @@ export class Header extends Component {
                 <div className="cityName">
                     <h1 className="text-center pt-4">Madrid</h1>
                 </div>
-                
             </div>
         )
     }
