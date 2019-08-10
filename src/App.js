@@ -9,12 +9,17 @@ import './App.css';
 const apiKey = '6cf3264b6c874b5c817bfea041b719a1';
  class App extends Component {
 
+   state = {
+
+   }
+
  getWeather = async (e) => {
  e.preventDefault();
  const city = document.querySelector('.city-input').value;
  const request = await fetch(`https://api.weatherbit.io/v2.0/current?city=${city}&key=${apiKey}`);
  const data = await request.json();
- console.log(data);
+ return console.log(data[0]);
+ 
 
  }
   render() {
