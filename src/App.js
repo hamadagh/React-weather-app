@@ -6,27 +6,32 @@ import './App.css';
 
 
 
-const apiKey = '6cf3264b6c874b5c817bfea041b719a1';
+const apiKey = '2ad9d898788257d1c8ab7d909fe7139c';
  class App extends Component {
 
    state = {
-
+     city: undefined,
+     icon: undefined,
+     temperature: undefined,
    }
 
  getWeather = async (e) => {
  e.preventDefault();
  const city = document.querySelector('.city-input').value;
- const request = await fetch(`https://api.weatherbit.io/v2.0/current?city=${city}&key=${apiKey}`);
+ const request = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}`);
  const data = await request.json();
- return console.log(data[0]);
- 
+ console.log(data);
 
  }
+
+ 
   render() {
+    
+   
     return (
       <div className="App">
-        <Header getWeather={this.getWeather} />
-        <Form />
+        <Header />
+        <Form getWeather={this.getWeather} />
         <Footer/>
       </div>
     )
