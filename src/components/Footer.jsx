@@ -1,12 +1,19 @@
 import React, { Component } from 'react'
+import clear from '../DarkSky/clear.svg'
+
 
 export class Footer extends Component {
+
     render() {
+      const {weather} = this.props;
         return (
             <div className="footer row container d-flex">
             <div className="curr-weather col-7">
                 <h2>Today</h2>
-                <i></i>
+                <img src={clear} alt="1" width="150"/>
+                <p className="temperature">{weather.temperature}</p>
+
+
             </div>
             <div className="forecast col-5 d-flex">
                 <div className="monday ml-5 mr-5">

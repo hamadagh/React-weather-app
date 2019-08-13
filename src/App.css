@@ -48,7 +48,8 @@ font-weight: bold;
     bottom: 0;
     width: 100%;
 }
-.footer .forecast{
-    
+.temperature {
+    color: white;
+    font-size: 30px;
 }
 /* footer */
